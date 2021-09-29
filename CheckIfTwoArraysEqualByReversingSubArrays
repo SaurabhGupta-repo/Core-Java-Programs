@@ -1,0 +1,47 @@
+import java.io.*; 
+import java.util.*;
+
+/*
+1. check if lenght of both arrays are equal
+2.cloop through 1st arrary and compare is with all the elements in 2nd array.
+  if a element is missing, break the loop, and return false.
+  
+*/
+class CheckIfTwoArraysEqualByReversingSubArrays {
+
+   boolean isEqualArrays(int[] arrayA, int[] arrayB) {
+    // Write your code here
+    
+    boolean flag = false;
+    
+    // check if lenght of both arrays are equal
+    if(arrayA.length == arrayB.length)
+    {
+      
+      for( int i=0; i < arrayA.length; i++)
+      {
+        flag= false;
+        for (int j =0 ; j < arrayB.length ; j++ )
+        {
+          
+          if(arrayA [i] == arrayB[j])
+          {
+            flag= true;
+            // if the element is found in 2nd array, then break the inner loop
+            break;
+          }
+          else
+            flag= false;
+        }
+      //  if a element is missing, break the outer loop, and return false.
+        if (flag == false)
+         break;
+      
+    }
+  }
+        return flag;
+
+  }
+
+
+
