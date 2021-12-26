@@ -19,8 +19,8 @@ Output: 0
 
 */
 
-  class NumSubarrayProductLessThanK {
-    public int numSubarrayProductLessThanK(int[] nums, int k) {
+  public class NumSubarrayProductLessThanK {
+     int numSubarrayProductLessThanK(int[] nums, int k) {
         
         
         int count=0;
