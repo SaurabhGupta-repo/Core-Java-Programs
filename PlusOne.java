@@ -51,7 +51,17 @@ class PlusOne {
             
         }
      
-        int [] plusOneArr = null;
+     /* if we re-create an existing array with extra length/size, all the existing elements are copied and extra length is added to beginning indexes.*/
+      if(temp >0)
+     {
+      digits = new  int [digits.length +1] ;
+      digits[0] = temp;
+      }
+     return digits;
+     
+     
+     /* alternate approach is to create a new array and copy the elements. Sample code below:*/
+    /* int [] plusOneArr = null;
      if(temp >0)
      {
          plusOneArr = new  int [digits.length +1] ;
@@ -62,5 +72,7 @@ class PlusOne {
          plusOneArr = digits;
      }
        return plusOneArr; 
+       */
+     
     }
 }
