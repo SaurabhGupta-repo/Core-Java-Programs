@@ -31,14 +31,9 @@ for(char ch: s1.toCharArray()){
     } 
     
     
-}
+    }
 
 return commonCharCount;
 }
 
-    
-    
-    
-    
-    
-    }
+}
