@@ -1,2 +1,2 @@
 # Core-Java-Programs
-Solution for Programming Questions
+Solution for Core Java Programming Questions
