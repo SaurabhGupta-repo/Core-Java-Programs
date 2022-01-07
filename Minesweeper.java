@@ -59,9 +59,5 @@ int[][] result = new int[matrix.length][matrix[0].length];
     }
     
     return result;
-    
-
-}
-
-  
+  }
 }
