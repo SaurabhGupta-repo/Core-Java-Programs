@@ -26,7 +26,7 @@ As you can see, there are 9 distinct sums that can be created from non-empty gro
 */
 
 
-public class possibleSumsOfCoins
+public class PossibleSumsOfCoins
 {
   
  int solution(int[] coins, int[] quantity) {
@@ -37,7 +37,7 @@ Clue: Make the hash table's keys the possible sums (or a set containing the poss
 
 */
     HashSet<Integer> sums = new HashSet<Integer>();
-    sums.add(0);
+    sums.add(0);  // tart empty, and add new coins to it.
     
     for(int i=0; i<coins.length; i++) {
         int coin = coins[i];
